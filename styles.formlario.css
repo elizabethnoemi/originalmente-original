@@ -1,4 +1,4 @@
-/* Estilos generales */
+
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
@@ -7,7 +7,7 @@ body {
   color: #333;
 }
 
-/* Encabezado */
+
 header {
   background: linear-gradient(to right, #495cca, #feb47b);
   color: white;
@@ -19,7 +19,7 @@ header {
   z-index: 1000;
 }
 
-/* Navegación */
+
 nav ul {
   display: flex;
   justify-content: center;
@@ -40,7 +40,7 @@ nav ul li a:hover {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-/* Contenedor del formulario */
+
 .form-container {
   max-width: 500px;
   margin: 50px auto;
@@ -73,7 +73,7 @@ textarea {
   resize: none;
 }
 
-/* Botón */
+
 button {
   background-color: #ff7e5f;
   color: white;
@@ -90,7 +90,7 @@ button:hover {
   transform: scale(1.05);
 }
 
-/* Pie de página */
+
 footer {
   display: flex;
   justify-content: center;
@@ -113,7 +113,7 @@ footer {
   transform: scale(1.1);
 }
 
-/* Responsividad */
+
 @media screen and (max-width: 600px) {
   .form-container {
     max-width: 90%;
