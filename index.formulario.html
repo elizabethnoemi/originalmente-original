@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Caribe - Reserva tu noche</title>
+    <link rel="stylesheet" href="styles.formlario.css">
+    <link rel="icon" type="image/png" href="images.jpg">
+</head>
+<body>
+
+<header>
+
+ <div class="container">
+        <p class="logo">Caribe</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#ubicacion">Bandas en vivo</a></li>
+                <li><a href="#destinos">Destinos</a></li>
+                <li><a href="index.formulario.html">Contáctanos</a></li>
+            </ul>
+        </nav>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/tuUsuario" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com/tuUsuario" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+            </a>
+            <a href="https://wa.me/tuNumeroDeTelefono" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+            </a>
+        </div>
+    </div>
+
+  </header>
+
+    <h1>Reserva tu viaje</h1>
+    <form action="https://formspree.io/f/xkgrkery" method="POST">
+        <p>
+          Rellenen los datos para proceder con tu reserva
+        </p>
+
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="apellidos">Apellidos</label>
+        <input type="text" id="apellidos" name="apellidos" required>
+
+        <label for="email">Correo Electrónico</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="destino">Destino del Viaje</label>
+        <input type="text" id="destino" name="destino" required>
+
+        <label for="fecha">Fecha de Viaje</label>
+        <input type="date" id="fecha" name="fecha" required>
+
+        <label for="mensaje">Comentarios o Preferencias</label>
+        <textarea id="mensaje" name="mensaje"></textarea>
+
+        <button type="submit">Enviar Plan</button>
+    </form>
+
+
+    <h2>Ubicación de nuestro centro</h2>
+    <div id="map"></div>
+
+    <script>
+        function initMap() {
+            var ubicacion = {lat: -34.603722, lng: -58.381592}; // Coordenadas de Buenos Aires
+            var mapa = new google.maps.Map(document.getElementById('map'), {
+                zoom: 10,
+                center: ubicacion
+            });
+            var marcador = new google.maps.Marker({
+                position: ubicacion,
+                map: mapa
+            });
+        }
+    </script>
+     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13120.362102103816!2d-58.7441376!3d-34.7028966!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bceaa32b47e7ab%3A0x11da0acb1d5d1dae!2sVeterinaria%20Araiam!5e0!3m2!1ses!2sar!4v1747937041718!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</body>
+</html>
