@@ -53,6 +53,8 @@ nav ul li a:hover {
   padding: 50px 20px;}
 
 
+
+
 /* Contenedor del formulario */
 .form-container {
   max-width: 500px;
@@ -120,28 +122,16 @@ button:hover {
   transform: scale(1.1);
 }
 
-
-@media screen and (max-width: 768px) {
-  .hero h1 {
-      font-size: 50px;
+/* Responsividad */
+@media screen and (max-width: 600px) {
+  .form-container {
+    max-width: 90%;
   }
 
-  .hero h2 {
-      font-size: 30px;
-      color: #333;
-     
-  }
-
-  nav ul {
-      flex-direction: column;
-  }
-  
   input, textarea {
     font-size: 16px;
   }
 }
-
-
 
 
 
