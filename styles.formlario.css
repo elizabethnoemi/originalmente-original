@@ -128,6 +128,22 @@ button:hover {
     max-width: 90%;
   }
 
+  .hero h2 {
+      font-size: 30px;
+      color: #333;
+     
+  }
+
+  nav ul {
+      flex-direction: column;
+  }
+
+  .hero img {
+      width: 100%;
+  }
+
+  
+
   input, textarea {
     font-size: 16px;
   }
