@@ -208,25 +208,22 @@ footer {
     transform: scale(1.05);
 }
 
- .whatsapp-icon img {
-  width: 30px;
-  height: 30px;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-}
+
 .social-icons {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
   display: flex;
-  gap: 10px;
+  gap: 15px;
 }
 
 .social-icons img {
   width: 40px;
   height: 40px;
+  transition: transform 0.3s ease;
 }
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+
 
 
 
