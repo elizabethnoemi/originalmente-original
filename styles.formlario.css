@@ -55,8 +55,8 @@ nav ul li a:hover {
 
 /* Contenedor del formulario */
 .form-container {
-  max-width: 0px;
-  margin: 50px auto;
+  max-width: 500px;
+  margin: 0px auto;
   padding: 30px;
   background-color: white;
   border-radius: 12px;
