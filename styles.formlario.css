@@ -112,6 +112,7 @@ button:hover {
 .social-icons img {
   width: 20px;
   height: 20px;
+   align-content: center;
   
   transition: transform 0.3s ease;
 }
