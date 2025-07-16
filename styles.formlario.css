@@ -109,17 +109,20 @@ button:hover {
   gap: 15px;
 }
 
+.social-icons {
+  display: flex;
+  justify-content: center;  /* Centrado horizontal */
+  align-items: center;      /* Centrado vertical si hay altura definida */
+  gap: 15px;
+  padding: 10px;            /* Espacio interno opcional */
+}
+
 .social-icons img {
   width: 20px;
   height: 20px;
-   align-content: center;
-  
   transition: transform 0.3s ease;
 }
 
-.social-icons img:hover {
-  transform: scale(1.1);
-}
 
 /* Responsividad */
 @media screen and (max-width: 600px) {
